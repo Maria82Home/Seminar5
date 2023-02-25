@@ -2,7 +2,7 @@
 {
   int sum = 0;
 
-  for i = 0; int < array.Length; int++) if (array[i] < 0) sum += array[i];
+  for (int i = 0; i < array.Length; i++) if (array[i] < 0) sum += array[i];
   return sum;
 }
 
@@ -20,16 +20,16 @@ int[] ChangeArray(int[] array)
 
 bool IsNumberIn(int[] array, int n)
 {
-  for(int i=0;i<array.Length;i++) if(array[i]==n)return true;
+  for (int i = 0; i < array.Length; i++) if (array[i] == n) return true;
   return false;
 };
 
 //Task3. Задать одномерный массив из m случайных чисел. Найти количество элементов массива, 
 //значения которых лежат в отрезке [a,b].
 
-int HowManyNumbers(int[] array,int a,int b)
+int HowManyNumbers(int[] array, int a, int b)
 {
   int count = 0;
-  for(int i=0;i<array.Length;i++) if(array[i]>=a&array[i]<=b) count++;
+  for (int i = 0; i < array.Length; i++) if (array[i] >= a & array[i] <= b) count++;
   return count;
 };
